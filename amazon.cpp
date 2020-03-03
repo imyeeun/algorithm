@@ -7,11 +7,11 @@ int main(){
 	scanf("%s", &a); 
 	for(i=0;a[i]!='\0';i++){
 		if(a[i]>=48 && a[i]<=57){
-			res = res*10 + (a[i]-48);
+			res = res*10 + (a[i]-48); // 아스키 처리
 		}
 	}
 	printf("%d\n", res);
-	// ��� ó��  
+	// 약수 처리 
 	for(i=1;i<=res;i++){
 		if(res%i==0) cnt++;
 	}
